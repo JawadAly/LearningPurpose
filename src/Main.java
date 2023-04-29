@@ -39,13 +39,21 @@ public class Main {
 //        c2.loyalityTimePeriod = 5;
 //        c2.display();
 
-        Students.setUniName("Bahria University");
-        Students.setSemester("2nd");
-        Students s1 = new Students(111,"Jawad Saleem");
-        s1.displayStudent();
-        Students.setSemester("2nd");
-        Students s2 = new Students(112,"Muhammad Ali");
-        s2.displayStudent();
-        Students.printNTimes(10,s2.stdName);
+//        Students.setUniName("Bahria University");
+//        Students.setSemester("2nd");
+//        Students s1 = new Students(111,"Jawad Saleem");
+//        s1.displayStudent();
+//        Students.setSemester("2nd");
+//        Students s2 = new Students(112,"Muhammad Ali");
+//        s2.displayStudent();
+//        Students.printNTimes(10,s2.stdName);
+
+        //flight test
+        Flight airbus3380 = new Flight(3380,"Karachi","Islamabad",82);
+        airbus3380.reserveSeats(2);
+        System.out.println(airbus3380.getSeatsAvailable());
+        airbus3380.cancelSeats(2);
+        System.out.println(airbus3380.getSeatsAvailable());
+        airbus3380.showFlightInfo();
     }
 }
