@@ -9,5 +9,14 @@ public class Library_Sys_Test {
         s1.addBook(dedSea);
         s1.addBook(blackSmith);
         s1.addBook(itGoes);
+//        s1.getAvailableBooks();
+        System.out.println(blackSmith.getBookCopies());
+        System.out.println(blackSmith.getStatus());
+        System.out.println(blackSmith.getBookBorrower());
+        s1.borrowBook(ali,blackSmith);
+        System.out.println(blackSmith.getBookCopies());
+        System.out.println(blackSmith.getStatus());
+        System.out.println(blackSmith.getBookBorrower().getName());
+
     }
 }

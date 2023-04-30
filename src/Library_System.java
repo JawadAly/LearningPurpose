@@ -22,8 +22,13 @@ public class Library_System {
         book.setStatus("Returned");
     }
     public void getAvailableBooks(){
-        for(int i = 0;i < books.size();i++){
-            System.out.println(books.get(i).getTitle());
+        if(books.size() == 0){
+            System.out.println("No book availavle in collection please add some of them");
+        }
+        else{
+            for(int i = 0;i < books.size();i++){
+                System.out.println(books.get(i).getTitle());
+            }
         }
     }
 }

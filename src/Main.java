@@ -49,11 +49,18 @@ public class Main {
 //        Students.printNTimes(10,s2.stdName);
 
         //flight test
-        Flight airbus3380 = new Flight(3380,"Karachi","Islamabad",82);
-        airbus3380.reserveSeats(2);
-        System.out.println(airbus3380.getSeatsAvailable());
-        airbus3380.cancelSeats(2);
-        System.out.println(airbus3380.getSeatsAvailable());
-        airbus3380.showFlightInfo();
+//        Flight airbus3380 = new Flight(3380,"Karachi","Islamabad",82);
+//        airbus3380.reserveSeats(2);
+//        System.out.println(airbus3380.getSeatsAvailable());
+//        airbus3380.cancelSeats(2);
+//        System.out.println(airbus3380.getSeatsAvailable());
+//        airbus3380.showFlightInfo();
+
+        Student ahmed = new Student();
+        ahmed.studentId = 111;
+        ahmed.studentName = "Ali Ahmed";
+        System.out.println("Students Id is : "+ahmed.studentId);
+        System.out.println("Students Name is : "+ahmed.studentName);
+        System.out.println("Students University is : "+Student.universityName);
     }
 }
